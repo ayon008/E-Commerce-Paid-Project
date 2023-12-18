@@ -1,13 +1,34 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const Chackout = () => {
     return (
         <section className='md:max-w-[1220px] mx-auto px-3 md:px-0'>
             <section className='flex justify-center pt-6'>
                 <div className='flex flex-col mx-1 md:mx-0  md:flex-row gap-x-6'>
-                    <div className=''>
-                        <img className='h-[330px] w-[330px] rounded-[2px] md:rounded-[0px]' src="https://static-01.daraz.com.bd/p/cefac422b4f375c84910a9471531e6e0.jpg_750x750.jpg_.webp" alt="" />
+                    <div className='w-[330px]'>
+                        <Carousel showArrows={true}>
+                            <div>
+                                <img className='md:rounded-[0px]' src="https://static-01.daraz.com.bd/p/cefac422b4f375c84910a9471531e6e0.jpg_750x750.jpg_.webp" alt="" />
+                            </div>
+                            <div>
+                                <img className='md:rounded-[0px]' src="https://static-01.daraz.com.bd/p/cefac422b4f375c84910a9471531e6e0.jpg_750x750.jpg_.webp" alt="" />
+                            </div>
+                            <div>
+                                <img src="assets/3.jpeg" />
+                            </div>
+                            <div>
+                                <img src="assets/4.jpeg" />
+                            </div>
+                            <div>
+                                <img src="assets/5.jpeg" />
+                            </div>
+                            <div>
+                                <img src="assets/6.jpeg" />
+                            </div>
+                        </Carousel>
                     </div>
                     <div className='py-6 md:py-0'>
                         <p className='md:text-[22px] text-[15px] text-[#212121] md:max-w-[600px] '>badgeDEROL 8 Colourrr hfhfgf Bag Little Monster Capsule Mini Candy Matte Lipstick - DR040</p>
